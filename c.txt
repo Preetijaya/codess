@@ -1,0 +1,16 @@
+First repeating character in a string
+#include<stdio.h>
+int main()
+{
+char s[10000];
+scanf("%s",s);
+int a[128]={0};
+for(int i=0;s[i];i++)
+{
+if(a[s[i]]==1)
+{
+printf("%c",s[i]);
+}
+a[s[i]]++;
+}
+}
